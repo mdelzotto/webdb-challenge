@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "knex": "^0.17.6",
+    "knex-cleaner": "^1.1.4",
+    "nodemon": "^1.19.1",
+    "sqlite3": "^4.0.9"
+  },
+  "name": "webdb-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mdelzotto/webdb-challenge.git",
+  "author": "mdelzotto <madelzotto@comcast.net>",
+  "license": "MIT"
+}
