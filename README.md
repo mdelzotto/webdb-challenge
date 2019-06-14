@@ -33,9 +33,27 @@ This will be akin to the Web API that you built in the last sprint, only this ti
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 1. Explain the difference between `RDBMS` and `SQL`.
-1. Why do tables need a `primary key`?
-1. What is the name given to a table column that references the primary key on another table.
-1. What do we need in order to have a _many to many_ relationship between two tables.
+
+RDBMS: There are several types of Database Management Systems, but by far the most widely used is the Relational DataBase Management Systems. The data is stored in tabular format grouped into rows and columns similar to spreadsheets. That collection of rows is called a table. Each row represents a single record in the table and is made up of one or more columns. These kind of databases are called relational due to the fact that a relation is a mathematical idea that is equivalent to a table. So relational databases are databases that store their data in tables.
+
+SQL: Structured Query Language is the standard language used to manage databases and the data within them. It is the de facto way to interact with DBMS. The syntax for SQL is English-like and requires a lot less symbols than other traditional languages like C, Java or JavaScript. It is declarative and very concise, which means, there is a lot less to learn in order to use it effectively.
+
+2. Why do tables need a `primary key`?
+
+Primary Key constraints identify the column or set of columns that have values that uniquely identify a row in a table. No two rows in a table can have the same primary key value. The values that compose a primary key column are unique; no two values are the same. Each table has one and only one primary key, which can consist of one or many columns.
+
+3. What is the name given to a table column that references the primary key on another table.
+
+A foreign key (FK) is a column or combination of columns that is used to establish and enforce a link between the data in two tables to control the data that can be stored in the foreign key table. A link is created between two tables when the column or columns that hold the primary key value for one table are referenced by the column or columns in another table. This column becomes a foreign key in the second table.
+
+4. What do we need in order to have a _many to many_ relationship between two tables.
+
+This type of relationship models things like:
+
+-an order can have many products and the same product will appear in many orders.
+-a book can have more than one author and an author can write more than one book.
+
+To model this relationship we need to introduce a third table that holds foreign keys that reference the primary key on the related tables.
 
 ## Project Set Up
 
